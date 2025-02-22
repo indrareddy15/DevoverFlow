@@ -11,10 +11,11 @@ cloudinary.config({
   api_secret: process.env.CLOUDINARY_API_SECRET
 });
 
+
 const storage = new CloudinaryStorage({
   cloudinary: cloudinary,
   params: {
-    folder: 'stack-overflow-clone',
+    folder: 'dev-overflow',
     allowed_formats: ['jpg', 'jpeg', 'png', 'gif'],
     transformation: [{ width: 1000, height: 1000, crop: 'limit' }]
   }
